@@ -88,6 +88,6 @@ It is called by AVA Spec with modified AVA instance as so:
 
 ## Team
 
-[![Adam Stankiewicz](https://avatars3.githubusercontent.com/u/292365?s=130)](https://sheerun.net) | [![Please help me!](https://s28.postimg.org/hcy7aq9nh/42.png)](https://github.com/sheerun/graphqlviz/pulls)
+[![Adam Stankiewicz](https://avatars3.githubusercontent.com/u/292365?s=130)](https://sheerun.net) | [![Please help me!](http://s28.postimg.org/hcy7aq9nh/42.png)](https://github.com/sheerun/ava-spec/pulls)
 ---|---
-[Adam Stankiewicz](https://sheerun.net) | [Become co-author!](https://github.com/sheerun/graphqlviz/pulls)
+[Adam Stankiewicz](https://sheerun.net) | [Become co-author!](https://github.com/sheerun/ava-spec/pulls)
