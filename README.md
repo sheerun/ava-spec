@@ -12,6 +12,8 @@ Then, install `ava-spec` as a development dependency:
 $ npm install --save-dev ava-spec
 ```
 
+You still run tests with `ava` command. The only thing that changes are tests themselves.
+
 ## Usage
 
 First of all, you can use `ava-spec` as a drop-in for ava:
