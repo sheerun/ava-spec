@@ -67,7 +67,7 @@ Last but not least you can pass groups around in fun ways:
 ```js
 const subject = test.describe('You');
 
-subject('do not need to use callacks!', t => {
+subject('do not need to use callbacks!', t => {
   t.is(2 + 2, 4);
 });
 ```
@@ -80,7 +80,7 @@ Result:
   ✔ AVA Spec can look almost like jasmine
   - AVA Spec supports all chaining modifiers!
   ✔ Cash withdrawal. Not enough money in ATM
-  ✔ You do not need to use callacks!
+  ✔ You do not need to use callbacks!
 
   4 tests passed
   1 test skipped
