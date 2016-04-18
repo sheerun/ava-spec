@@ -41,7 +41,7 @@ test.feature('Cash withdrawal.', scenario => {
   });
 });
 
-var subject = test.describe('You');
+const subject = test.describe('You');
 
 subject('do not need to use callacks!', t => {
   t.is(2 + 2, 4);
