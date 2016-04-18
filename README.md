@@ -41,7 +41,9 @@ describe('AVA Spec', it => {
 Or write cucumber-like scenarios:
 
 ```js
-test.feature('Cash withdrawal.', scenario => {
+import {feature} from 'ava-spec';
+
+feature('Cash withdrawal.', scenario => {
   scenario('Not enough money in ATM', t => {
     // Cucumber-like keywords are available
   });
