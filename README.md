@@ -14,13 +14,19 @@ $ npm install --save-dev ava-spec
 
 ## Usage
 
+First of all, you can use `ava-spec` as a drop-in for ava:
+
 ```js
 import test from 'ava-spec';
 
 test('AVA Spec is 100% compatible with ava', t => {
   t.is(true, true);
 });
+```
 
+Jasmine-like DSL is supported:
+
+```js
 test.describe('AVA Spec', it => {
   it('can look almost like jasmine', t => {
     t.deepEqual([1, 2], [1, 2]);
@@ -28,19 +34,31 @@ test.describe('AVA Spec', it => {
 
   it.todo('supports all chaining modifiers!');
 });
+```
 
+Group names are optional, though:
+
+```js
 test.serial.skip.group(test => {
   test('AVA Spec can be used to just group some tests', t => {
     t.not(true, false);
   });
 });
+```
 
+You can also write cucumber-like scenarios:
+
+```js
 test.feature('Cash withdrawal.', scenario => {
   scenario('Not enough money in ATM', t => {
     // Cucumber-like keywords are available
   });
 });
+```
 
+Last but not least you can assign groups to variables:
+
+```
 const subject = test.describe('You');
 
 subject('do not need to use callacks!', t => {
