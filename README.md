@@ -58,7 +58,7 @@ test.feature('Cash withdrawal.', scenario => {
 
 Last but not least you can assign groups to variables:
 
-```
+```js
 const subject = test.describe('You');
 
 subject('do not need to use callacks!', t => {
