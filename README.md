@@ -110,6 +110,10 @@ It is called by AVA Spec with modified AVA instance as so:
 1. Group modifiers are applied to all tests inside it
 2. Group title is prefixed to all test titles inside it
 
+## Caveats
+
+Currently AVA Spec doesn't support per-group hooks. AVA support for per-test hooks is required first.
+
 ## Team
 
 [![Adam Stankiewicz](https://avatars3.githubusercontent.com/u/292365?s=130)](https://sheerun.net) | [![Please help me!](http://s28.postimg.org/hcy7aq9nh/42.png)](https://github.com/sheerun/ava-spec/pulls)
