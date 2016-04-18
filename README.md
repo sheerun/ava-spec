@@ -17,20 +17,20 @@ $ npm install --save-dev ava-spec
 ```js
 import test from 'ava-spec';
 
-test('ava spec is 100% compatible with ava', t => {
+test('AVA Spec is 100% compatible with ava', t => {
   t.is(true, true);
 });
 
-test.describe('ava spec', it => {
+test.describe('AVA Spec', it => {
   it('can look almost like jasmine', t => {
     t.deepEqual([1, 2], [1, 2]);
   });
 
-  it.skip.todo('supports all chaining modifiers!');
+  it.todo('supports all chaining modifiers!');
 });
 
-test.only.group(test => {
-  test('it can be used to group some tests', t => {
+test.serial.skip.group(test => {
+  test('AVA Spec can be used to just group some tests', t => {
     t.not(true, false);
   });
 });
@@ -44,32 +44,47 @@ test.feature('Cash withdrawal.', scenario => {
 var subject = test.describe('You');
 
 subject('do not need to use callacks!', t => {
-  t.end();
+  t.is(2 + 2, 4);
 });
+```
+
+Result:
+
+```
+  - AVA Spec can be used to just group some tests
+  ✔ AVA Spec is 100% compatible with ava
+  ✔ AVA Spec can look almost like jasmine
+  - AVA Spec supports all chaining modifiers!
+  ✔ Cash withdrawal. Not enough money in ATM
+  ✔ You do not need to use callacks!
+
+  4 tests passed
+  1 test skipped
+  1 test todo
 ```
 
 ## API
 
-AVA SPEC allows you to define test groups with 3 equivalent methods:
+AVA spec allows you to define test groups using 3 equivalent methods:
 
-### `test.describe([title], implementation)`
-### `test.feature([title], implementation)`
-### `test.group([title], implementation)`
+#### `test.describe([title], implementation)`
+#### `test.feature([title], implementation)`
+#### `test.group([title], implementation)`
 
-#### `title`
+##### `title`
 
 Type: `string`
 
-Group title.
+A group title.
 
-#### `implementation(ava)`
+##### `implementation(ava)`
 
 Type: `function`
 
-Called by ava-spec with scoped AVA instance so:
+It is called by AVA Spec with modified AVA instance as so:
 
-1. All modifiers applied to group are applied to any test inside it
-2. Test titles inside group are prefixed with group title followed by space
+1. Group modifiers are applied to all tests inside it
+2. Group title is prefixed to all test titles inside it
 
 ## Team
 
