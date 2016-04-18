@@ -1,7 +1,7 @@
 {
   "name": "ava-spec",
   "version": "1.0.0",
-  "description": "BDD helpers for AVA 🌠",
+  "description": "Drop-in BDD helpers for AVA test runner 🌠",
   "license": "MIT",
   "repository": "sheerun/ava-spec",
   "main": "./lib/index.js",
@@ -57,7 +57,6 @@
   },
   "devDependencies": {
     "proxyquire": "^1.7.4",
-    "sinon": "^1.17.2",
     "tap": "^5.4.2",
     "xo": "*"
   },
