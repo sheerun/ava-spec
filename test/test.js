@@ -7,7 +7,7 @@ function mock(ava) {
     ava = {};
   }
   ava['@noCallThru'] = true;
-  return proxyquire('./', {ava: ava});
+  return proxyquire('../', {ava: ava});
 }
 
 function id(title) {
