@@ -2,7 +2,17 @@
 
 [![Build Status](https://travis-ci.org/sheerun/ava-spec.svg?branch=master)](https://travis-ci.org/sheerun/ava-spec)
 
-## Syntax
+## Installation
+
+AVA Spec is meant to be installed next to [AVA](https://github.com/sindresorhus/ava), so please follow its installation instructions first.
+
+Then, install `ava-spec` as a development dependency:
+
+```
+$ npm install --save-dev ava-spec
+```
+
+## Usage
 
 ```js
 import test from 'ava-spec';
@@ -16,31 +26,20 @@ test.describe('ava spec', it => {
     t.deepEqual([1, 2], [1, 2]);
   });
 
-  it.skip.todo('supports all chaining modifiers as well');
+  it.skip.todo('supports all chaining modifiers!');
 });
-```
 
-## Installation
+test.only.group(test => {
+  test('it can be used to group some tests', t => {
+    t.not(true, false);
+  });
+});
 
-AVA Spec is meant to be installed next to [AVA](https://github.com/sindresorhus/ava), so please follow its installation instructions first.
-
-Then, install `ava-spec` as a development dependency:
-
-```
-$ npm install --save-dev ava-spec
-```
-
-```
-{
-  "name": "awesome-package",
-  "scripts": {
-    "test": "ava"
-  },
-  "devDependencies": {
-    "ava": "^0.11.0",
-    "ava-spec": "^1.0.0"
-  }
-}
+test.feature('Cash withdrawal.', scenario => {
+  scenario('Not enough money in ATM', t => {
+    // Cucumber-like keywords are available
+  });
+});
 ```
 
 ## Team
