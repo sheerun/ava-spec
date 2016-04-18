@@ -1,0 +1,70 @@
+{
+  "name": "ava-spec",
+  "version": "1.0.0",
+  "description": "BDD helpers for AVA 🌠",
+  "license": "MIT",
+  "repository": "sheerun/ava-spec",
+  "author": {
+    "name": "Adam Stankiewicz",
+    "email": "sheerun@sher.pl",
+    "url": "sheerun.net"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tap --no-cov --reporter=classic --timeout=150 test.js",
+    "lint": "xo --fix"
+  },
+  "files": [
+    "lib",
+    "*.js"
+  ],
+  "keywords": [
+    "test",
+    "runner",
+    "ava",
+    "concurrent",
+    "parallel",
+    "fast",
+    "tape",
+    "tap",
+    "mocha",
+    "qunit",
+    "jasmine",
+    "tdd",
+    "cli-app",
+    "cli",
+    "assert",
+    "assertion",
+    "futuristic",
+    "promise",
+    "promises",
+    "async",
+    "function",
+    "await",
+    "generator",
+    "generators",
+    "yield",
+    "observable",
+    "observables",
+    "tap"
+  ],
+  "dependencies": {
+    "fn-name": "^2.0.1",
+    "option-chain": "^0.1.0"
+  },
+  "devDependencies": {
+    "proxyquire": "^1.7.4",
+    "sinon": "^1.17.2",
+    "tap": "^5.4.2",
+    "xo": "*"
+  },
+  "peerDependencies": {
+    "ava": "*"
+  },
+  "xo": {
+    "space": 2,
+    "semicolon": true
+  }
+}
