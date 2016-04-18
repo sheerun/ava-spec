@@ -27,7 +27,9 @@ test('AVA Spec is 100% compatible with ava', t => {
 Jasmine-like DSL is supported:
 
 ```js
-test.describe('AVA Spec', it => {
+import {describe} from 'ava-spec';
+
+describe('AVA Spec', it => {
   it('can look almost like jasmine', t => {
     t.deepEqual([1, 2], [1, 2]);
   });
@@ -36,17 +38,7 @@ test.describe('AVA Spec', it => {
 });
 ```
 
-Group names are optional, though:
-
-```js
-test.serial.skip.group(test => {
-  test('AVA Spec can be used to just group some tests', t => {
-    t.not(true, false);
-  });
-});
-```
-
-You can also write cucumber-like scenarios:
+Or write cucumber-like scenarios:
 
 ```js
 test.feature('Cash withdrawal.', scenario => {
@@ -56,7 +48,17 @@ test.feature('Cash withdrawal.', scenario => {
 });
 ```
 
-Last but not least you can assign groups to variables:
+Or just group tests together:
+
+```js
+test.serial.skip.group(test => {
+  test('AVA Spec can be used to just group some tests', t => {
+    t.not(true, false);
+  });
+});
+```
+
+Last but not least you can pass groups around in fun ways:
 
 ```js
 const subject = test.describe('You');
