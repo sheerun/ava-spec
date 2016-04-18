@@ -40,10 +40,37 @@ test.feature('Cash withdrawal.', scenario => {
     // Cucumber-like keywords are available
   });
 });
+
+var subject = test.describe('You');
+
+subject('do not need to use callacks!', t => {
+  t.end();
+});
 ```
+
+## API
+
+### `test.describe([title], implementation)`
+### `test.feature([title], implementation)`
+### `test.group([title], implementation)`
+
+#### `title`
+
+Type: `string`
+
+Group title.
+
+#### `implementation(ava)`
+
+Type: `function`
+
+AVA Spec calls this function passing AVA runner with following changes:
+
+1. All modifiers applied to group are applied to any test inside it
+2. Test titles inside group are prefixed with group title followed by space
 
 ## Team
 
-[![Adam Stankiewicz](https://avatars3.githubusercontent.com/u/292365?s=130)](https://sheerun.net) | [![You](https://s28.postimg.org/hcy7aq9nh/42.png)](https://github.com/sheerun/graphqlviz/pulls)
+[![Adam Stankiewicz](https://avatars3.githubusercontent.com/u/292365?s=130)](https://sheerun.net) | [![Please help me!](https://s28.postimg.org/hcy7aq9nh/42.png)](https://github.com/sheerun/graphqlviz/pulls)
 ---|---
-[Adam Stankiewicz](https://sheerun.net) | [You](https://github.com/sheerun/graphqlviz/pulls)
+[Adam Stankiewicz](https://sheerun.net) | [Please help me!](https://github.com/sheerun/graphqlviz/pulls)
