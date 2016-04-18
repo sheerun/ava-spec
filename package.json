@@ -14,7 +14,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "tap --no-cov --reporter=classic --timeout=150 test.js",
+    "test": "tap --no-cov --reporter=classic --timeout=150 test/*.js",
     "lint": "xo --fix"
   },
   "files": [
