@@ -50,6 +50,8 @@ subject('do not need to use callacks!', t => {
 
 ## API
 
+AVA SPEC allows you to define test groups with 3 equivalent methods:
+
 ### `test.describe([title], implementation)`
 ### `test.feature([title], implementation)`
 ### `test.group([title], implementation)`
@@ -64,7 +66,7 @@ Group title.
 
 Type: `function`
 
-AVA Spec calls this function passing AVA runner with following changes:
+Called by ava-spec with scoped AVA instance so:
 
 1. All modifiers applied to group are applied to any test inside it
 2. Test titles inside group are prefixed with group title followed by space
@@ -73,4 +75,4 @@ AVA Spec calls this function passing AVA runner with following changes:
 
 [![Adam Stankiewicz](https://avatars3.githubusercontent.com/u/292365?s=130)](https://sheerun.net) | [![Please help me!](https://s28.postimg.org/hcy7aq9nh/42.png)](https://github.com/sheerun/graphqlviz/pulls)
 ---|---
-[Adam Stankiewicz](https://sheerun.net) | [Please help me!](https://github.com/sheerun/graphqlviz/pulls)
+[Adam Stankiewicz](https://sheerun.net) | [Become co-author!](https://github.com/sheerun/graphqlviz/pulls)
