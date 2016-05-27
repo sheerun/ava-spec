@@ -5,6 +5,10 @@ test.beforeEach(function (t) {
   t.context.test = 'test';
 });
 
+test(function (t) {
+  t.is(true, true);
+});
+
 test('is compatible with ava', function (t) {
   t.is(true, true);
 });
