@@ -14,7 +14,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "tap --no-cov --reporter=classic --timeout=150 test/*.js",
+    "test": "tap --no-cov --reporter=classic --timeout=150 test/*.js && ava spec",
     "lint": "xo --fix"
   },
   "files": [
@@ -56,6 +56,7 @@
     "option-chain": "^0.1.0"
   },
   "devDependencies": {
+    "ava": "^0.15.1",
     "proxyquire": "^1.7.4",
     "tap": "^5.4.2",
     "xo": "*"
