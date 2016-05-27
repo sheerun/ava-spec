@@ -10,7 +10,7 @@ test('is compatible with ava', function (t) {
 });
 
 test('is compatible with ava context', function (t) {
-  t.true(t.context.test, 'test');
+  t.true(t.context.test === 'test');
 });
 
 test.describe('describe', function (test) {
