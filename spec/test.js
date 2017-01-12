@@ -28,7 +28,7 @@ test.skip.describe('describe', function (test) {
     t.is(true, false);
   });
 
-  test('can skip multiple tests', function (t) {
+  test('can skip multiple tests', function () {
     throw new Error('hello world');
   });
 });

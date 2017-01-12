@@ -30,6 +30,22 @@ test('supports simple methods', function (t) {
   t.end();
 });
 
+test('supports failing', function (t) {
+  var test = mock({
+    failing: id
+  });
+  t.same(test.failing('name'), 'name');
+  t.end();
+});
+
+test('supports always', function (t) {
+  var test = mock({
+    always: id
+  });
+  t.same(test.always('name'), 'name');
+  t.end();
+});
+
 test('supports chained methods', function (t) {
   var test = mock({
     afterEach: {
