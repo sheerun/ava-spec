@@ -18,9 +18,11 @@
     "lint": "xo --fix"
   },
   "files": [
+    "types/index.d.ts",
     "lib",
     "*.js"
   ],
+  "typings": "types/index.d.ts",
   "keywords": [
     "test",
     "runner",
@@ -56,7 +58,7 @@
     "option-chain": "^0.1.0"
   },
   "devDependencies": {
-    "ava": "^0.15.1",
+    "ava": "^0.23.0",
     "proxyquire": "^1.7.4",
     "tap": "^5.4.2",
     "xo": "*"
