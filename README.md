@@ -1,3 +1,5 @@
+> **DEPRECATED** Please use [Jest](https://facebook.github.io/jest/) which is more powerful than Ava and supports `describe` out of the box.
+
 # ![AVA Spec](https://i.imgsafe.org/0314359.png)
 
 [![Build Status](https://travis-ci.org/sheerun/ava-spec.svg?branch=master)](https://travis-ci.org/sheerun/ava-spec)
