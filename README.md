@@ -112,7 +112,7 @@ It is called by AVA Spec with modified AVA instance as so:
 
 ## Caveats
 
-Currently AVA Spec doesn't support per-group hooks. It's a feature planned for 1.1.0.
+Currently AVA Spec doesn't support per-group hooks.
 
 ## Team
 
